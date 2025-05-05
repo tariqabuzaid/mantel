@@ -8,6 +8,13 @@ This project is a simple application that reads a log file and processes it to:
 
 ## Installation
 
--
--
--
+-   clone project repo:
+-   run `npm install`
+
+## run the code
+
+-   run `npm run start`
+
+## run the test
+
+-   run ` npm run test`
