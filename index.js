@@ -1,18 +1,11 @@
-const fs = require("fs");
+const { parseLogFile } = require("./utils");
 
-function parseLogFile(filePath) {
-	if (!fs.existsSync(filePath)) {
-		console.error("File not found:", filePath);
-		return;
-	}
+try {
+	const data = parseLogFile("./data/programming-task-example-data.log");
 
-	try {
-		const logData = fs.readFileSync(filePath, "utf-8");
-		console.log(logData);
-	} catch (error) {
-		console.error("Error reading file:", error.message);
-		return;
-	}
+	console.log("Number of unique IPs:", data.ips);
+	console.log("Top 3 most visited URLs:", data.topUrls);
+	console.log("Top 3 most active IPs:", data.topIps);
+} catch (error) {
+	console.error(error.message);
 }
-
-console.log(parseLogFile("./programming-task-example-data.log"));
