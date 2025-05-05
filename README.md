@@ -8,7 +8,7 @@ This project is a simple application that reads a log file and processes it to:
 
 ## Installation
 
--   clone project repo:
+-   clone project repo: [git@github.com:tariqabuzaid/mantel.git](git@github.com:tariqabuzaid/mantel.git)
 -   run `npm install`
 
 ## run the code
